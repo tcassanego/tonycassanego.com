@@ -1,0 +1,46 @@
+!!!
+%html
+  %head
+    %title Tony Cassanego
+    %meta{'name' => 'description', :content => 'Personal page of Tony Cassanego'}
+    %meta{'http-equiv' => 'Content-Type', :content => 'text/html'}
+    %meta{'charset' => 'UTF-8'}
+    %link(rel="stylesheet" href="css/main.css")  
+  %body
+    #bg
+    #top_bar
+    #container
+      #name
+        Tony Cassanego
+      #links
+        %span.link
+          %a(href='http://500px.com/tcassanego') Photography
+        %span.link
+          %a(href='http://www.linkedin.com/in/tonycassanego') LinkedIn
+        %span.link
+          %a(href='https://github.com/tcassanego') Github
+        %span.link
+          %a(href='http://www.facbook.com/cassanego') Facebook
+        %span#about_link.link
+          %a(href='#') About
+      #about
+        #slide_in_bar
+          #close
+            %a(href='#')
+              %img(src='img/close.png')
+        #about_text
+          %p I'm an entrepreneur and software engineer living and working in San Francisco.
+          %p Thanks for stopping by!
+  %script{:src => '//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js'}
+  %script{:src => 'js/main.js'}
+  :javascript
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-35885967-1']);
+    _gaq.push(['_setDomainName', 'tonycassanego.com']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
