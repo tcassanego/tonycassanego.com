@@ -5,12 +5,12 @@ var loadBackground = function() {
   exp.setTime(exp.getTime() + 2592000000); /* 30 days */
   
   var start, end;
-  var cookie_name = 'bgimg';
+  var cookie_name = 'last_background';
   
   if ((start = document.cookie.indexOf(cookie_name)) === -1) {
     document.cookie = cookie_name + '=' + num + '; expires=' + exp.toUTCString() + '; path=/'
   } else {
-    end = ((i = document.cookie.indexOf(';')) === -1 ? document.cookie.length : i);
+    end = ((i = document.cookie.indexOf(';', start)) === -1 ? document.cookie.length : i);
     num = parseInt(document.cookie.slice(start + cookie_name.length + 1, end), 10);
     num = (num % 4) + 1; /* 1-4 */
     document.cookie = cookie_name + '=' + num + '; expires=' + exp.toUTCString() + '; path=/'
