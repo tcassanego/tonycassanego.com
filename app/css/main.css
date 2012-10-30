@@ -81,16 +81,20 @@ body {
   z-index: 999;
 }
 
-@media screen and (max-width: 722px) {
-  #container {
-    width: 97%;
-  }
-}
-
 @media screen and (max-width: 468px) {
+  #container {
+    top: 10px;
+  }
+  
   .link {
     width: 100%;
     display: block;
+  }
+}
+
+@media screen and (max-width: 722px) {
+  #container {
+    width: 97%;
   }
 }
 
