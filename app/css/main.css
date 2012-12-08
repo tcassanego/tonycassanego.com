@@ -1,6 +1,6 @@
 * {
-  font-family: Verdana, Geneva, sans-serif;
-  font-weight: bold;
+  font-family: 'Droid Serif', serif;
+  font-weight: 400;
   color: white;
 }
 body {
@@ -50,9 +50,8 @@ body {
 .link a {
   color: #eee;
   text-shadow: 1px 1px 1px black;
-  font-size: 14px;
+  font-size: 16px;
   text-decoration: none;
-  font-style: italic;
 }
 #slide_in_bar {
   width: 0%;
@@ -80,7 +79,7 @@ body {
   left: -8px;
   z-index: 999;
 }
-
+/* This should be 480 at least */
 @media screen and (max-width: 468px) {
   #container {
     top: 10px;
